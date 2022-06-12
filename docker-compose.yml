@@ -1,4 +1,4 @@
 services:
   app:
-    image: nvim
+    image: nvim-with-packer
     build: .
