@@ -1,4 +1,4 @@
-# Dockerfile for nvim with Packer
+# Docker project for NeoVim with Packer
 
 ## Build image
 
