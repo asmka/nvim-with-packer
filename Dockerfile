@@ -1,6 +1,7 @@
 FROM alpine:3.16.0
 WORKDIR /root
 
+RUN apk add bash
 RUN apk add neovim
 RUN apk add git
 RUN apk add npm

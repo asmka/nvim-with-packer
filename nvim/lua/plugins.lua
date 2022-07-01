@@ -3,4 +3,6 @@ return require('packer').startup(function(use)
   -- LSP
   use 'prabirshrestha/vim-lsp'
   use 'mattn/vim-lsp-settings'
+  use 'prabirshrestha/asyncomplete.vim'
+  use 'prabirshrestha/asyncomplete-lsp.vim'
 end)
