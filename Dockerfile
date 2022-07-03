@@ -18,7 +18,9 @@ COPY --chown=appuser:appgroup nvim .config/nvim
 RUN git clone --depth 1 https://github.com/wbthomason/packer.nvim .local/share/nvim/site/pack/packer/start/packer.nvim
 RUN nvim --headless +'au User PackerComplete quitall' +'PackerInstall'
 
-# Place example project
+# Setup example project
 COPY --chown=appuser:appgroup example example
+WORKDIR /home/appuser/example
+RUN npm ci
 
-CMD ["/bin/sh"]
+CMD ["/bin/bash"]
